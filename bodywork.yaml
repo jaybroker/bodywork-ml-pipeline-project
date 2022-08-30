@@ -11,7 +11,7 @@ stages:
       - joblib==1.1.0
       - pandas==1.4.1
       - scikit-learn==1.0.2
-    cpu_request: 0.5
+    cpu_request: 1
     memory_request_mb: 100
     batch:
       max_completion_time_seconds: 60
@@ -26,7 +26,7 @@ stages:
     cpu_request: 0.25
     memory_request_mb: 100
     service:
-      max_startup_time_seconds: 60
+      max_startup_time_seconds: 600
       replicas: 2
       port: 5000
       ingress: true
